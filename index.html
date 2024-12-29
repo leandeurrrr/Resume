@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Léandre Postal</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>Léandre Postal</h1>
   </header>
 
   <main>
@@ -22,12 +23,49 @@
     <section id="interests">
       <h2>My Interests</h2>
       <div class="grid">
-        <div class="card">Coding</div>
-        <div class="card">Music</div>
-        <div class="card">Traveling</div>
-        <div class="card">Gaming</div>
-        <div class="card">Photography</div>
-        <div class="card">Sports</div>
+
+        <!-- Sports Card -->
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <i class="fas fa-running" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+              <p>Sports</p>
+            </div>
+            <div class="flip-back">
+              <p>
+                J'aime les sports comme le triathlon, l'ultimate frisbee et le volley.
+                Les sports d'extérieur m'intéressent particulièrement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies Card -->
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <i class="fas fa-laptop-code" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+              <p>Technologies</p>
+            </div>
+            <div class="flip-back">
+              <p>
+                Je suis passionné par les nouvelles technologies, qu'il s'agisse de
+                jeux vidéo ou de génie logiciel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <p>Autre</p>
+            </div>
+            <div class="flip-back">
+              <p>Un autre...</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -54,10 +92,11 @@
 
     <!-- Work Section -->
     <section id="work">
-      <h2>Work History</h2>
+      <h2>Expériences de travail</h2>
       <ul>
         <li>
-          <h3>Frontend Developer at Tech Solutions Inc. (2022 - Present)</h3>
+          <h3 style="margin-bottom: 1px;">Analyste Programmeur à l'Université de Sherbrooke</h3>
+          <p style="font-size:14px; color: darkgrey; margin: 0;">Sessions été et automne 2024</p>
           <p>Worked on developing responsive user interfaces and improving UX.</p>
         </li>
         <li>
@@ -104,6 +143,10 @@
       </ul>
     </section>
   </main>
+
+  <a href="CV.pdf" class="download-button" target="_blank">
+    Télécharger le CV
+  </a>
 
   <footer>
     <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
