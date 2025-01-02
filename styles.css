@@ -185,3 +185,8 @@ a:hover {
   z-index: -1; 
   background-color: #ECECEC; 
 }
+
+.aboutMe {
+  text-align: justify;
+  margin-bottom: 5px;
+}
