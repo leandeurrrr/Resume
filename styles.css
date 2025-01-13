@@ -15,7 +15,7 @@ header {
   padding: 1rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: centerlanguage;
   width: 100%;
   position: relative;
 }
@@ -213,5 +213,4 @@ select#language-switcher {
 
 select#language-switcher:focus {
   outline: none;
-  box-shadow: 0 0 5px #2980B9; /* Focused shadow */
 }
