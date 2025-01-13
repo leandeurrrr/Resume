@@ -8,41 +8,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles-config.js" defer></script>
+  <script src="translate.js"></script>
   
 </head>
 <body>
   <header>
-    <h1>Léandre Postal</h1>
+    <div class="header">
+      <h1 data-translate="title" style="margin: 0 auto;">Léandre Postal</h1>
+      <select id="language-switcher" >
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    
   </header>
+
   <div id="particles-js"></div>
 
   <main>
-    <!-- Presentation Section -->
     <section id="presentation">
-      <h2>À propos de moi</h2>
+      <h2 data-translate="aboutMeTitle">À propos de moi</h2>
       <div class="grid">
         <img src="Leandre.png" alt="" width="20%" height="20%" style="border-radius: 50%;">
         <div style="margin-left: 10px;"> 
-          <p class="aboutMe">Bonjour, je m'appelle Léandre et je suis récemment diplômé d’un baccalauréat en informatique de l’Université de Sherbrooke, en régime coopératif.</p>
-          <p class="aboutMe">Je suis motivé par les défis technologiques et par l'idée d'apporter des solutions innovantes grâce à mes compétences techniques et ma rigueur professionnelle.</p>
+          <p class="aboutMe" data-translate="aboutMeText1">Bonjour, je m'appelle Léandre et je suis récemment diplômé d’un baccalauréat en informatique de l’Université de Sherbrooke, en régime coopératif.</p>
+          <p class="aboutMe" data-translate="aboutMeText2">Je suis motivé par les défis technologiques et par l'idée d'apporter des solutions innovantes grâce à mes compétences techniques et ma rigueur professionnelle.</p>
         </div>
       </div>
       </section>
 
-    <!-- Interests Section -->
     <section id="interests">
-      <h2>Mes intérêts</h2>
+      <h2 data-translate="interestsTitle">Mes intérêts</h2>
       <div class="grid">
-
-        <!-- Sports Card -->
         <div class="flip-container">
           <div class="flip-inner">
             <div class="flip-front">
               <i class="fas fa-running" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
-              <p>Sports</p>
+              <p data-translate="sports">Sports</p>
             </div>
             <div class="flip-back">
-              <p>
+              <p data-translate="sportsDescription">
                 J'aime les sports comme le triathlon, l'ultimate frisbee et le volley.
                 Les sports d'extérieur m'intéressent aussi !
               </p>
@@ -55,10 +60,10 @@
           <div class="flip-inner">
             <div class="flip-front">
               <i class="fas fa-laptop-code" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
-              <p>Innovations</p>
+              <p data-translate="innovations">Innovations</p>
             </div>
             <div class="flip-back">
-              <p>
+              <p data-translate="innovationsDescription">
                 J'aime explorer de nouvelles approches, outils et frameworks pour apporter des solutions performantes et adaptées aux besoins des utilisateurs.
               </p>
             </div>
@@ -69,10 +74,10 @@
           <div class="flip-inner">
             <div class="flip-front">
               <i class="fas fa-palette" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
-              <p>Graphisme</p>
+              <p data-translate="graphics">Graphisme</p>
             </div>
             <div class="flip-back">
-              <p>J'aime concevoir, modéliser et dessiner de nouvelles idées. De Krita a Blender j'aime débuter des projets créatifs.</p>
+              <p data-translate="graphicsDescription">J'aime concevoir, modéliser et dessiner de nouvelles idées. De Krita a Blender j'aime débuter des projets créatifs.</p>
             </div>
           </div>
         </div>
@@ -81,24 +86,24 @@
 
     <!-- Skills Section -->
     <section id="skills">
-      <h2>My Skills</h2>
+      <h2 data-translate="skills">My Skills</h2>
       <div class="skill">
         <div style="display: flex;">
-          <p>Travail en équipe</p>
+          <p data-translate="teamwork">Travail en équipe</p>
           <p style="margin-left: 10px">100%</p>
         </div>
         <div class="progress-bar"><div style="width: 100%;"></div></div>
       </div>
       <div class="skill">
         <div style="display: flex;">
-          <p>Curiosité</p>
+          <p data-translate="curiosity">Curiosité</p>
           <p style="margin-left: 10px">100%</p>
         </div>
         <div class="progress-bar"><div style="width: 100%;"></div></div>
       </div>
       <div class="skill">
         <div style="display: flex;">
-          <p>leadership</p>
+          <p data-translate="leadership">leadership</p>
           <p style="margin-left: 10px">90%</p>
         </div>
         <div class="progress-bar"><div style="width: 90%;"></div></div>
@@ -107,75 +112,90 @@
 
     <!-- Work Section -->
     <section id="work">
-      <h2>Expériences de travail</h2>
+      <h2 data-translate="workTitle">Expériences de travail</h2>
       <ul>
         <li>
-          <h3 style="margin-bottom: 1px;">Analyste Programmeur à l'<a href="https://www.usherbrooke.ca/bottin/services/service-des-technologies-de-information#acc-1946-5946" target="_blank">Université de Sherbrooke</a></h3>
-          <p style="font-size:14px; color: darkgrey; margin: 0;">Sessions été et automne 2024, stage T4 et emploi à temps partiel</p>
-          <p>Développement d'un API REST en Java afin de creer et modifier des données des personnes étudiantes à l'université. <br> Utilisation de Java, Spring Boot, GitLab et Docker.</p>
+          <div style="display: flex;">
+            <h3 style="margin-bottom: 1px;" data-translate="we1Title">Analyste Programmeur à l'</h3>
+            <h3><a href="https://www.usherbrooke.ca/bottin/services/service-des-technologies-de-information#acc-1946-5946" target="_blank"> Université de Sherbrooke</a></h3>
+          </div>
+          <p style="font-size:14px; color: darkgrey; margin: 0;" data-translate="we1Time">Sessions été et automne 2024, stage T4 et emploi à temps partiel</p>
+          <p data-translate="we1Description">Développement d'un API REST en Java afin de creer et modifier des données des personnes étudiantes à l'université. <br> Utilisation de Java, Spring Boot, GitLab et Docker.</p>
         </li>
         <li>
-          <h3 style="margin-bottom: 1px;">Développeur full-stack chez <a href="https://belley.net/fr/" target="_blank">A&R Belley inc.</a></h3>
-          <p style="font-size:14px; color: darkgrey; margin: 0;">Session hiver 2024, emploi à temps partiel</p>
-          <p>Implementation d'une page de de génération de contrats et d'envoi de documents.<br> Utilisation de Blazor, C#, SQL server, Docusign API.</p>
+          <div style="display: flex;">
+            <h3 style="margin-bottom: 1px;" data-translate="we2Title">Développeur full-stack chez </h3>
+            <h3><a href="https://belley.net/fr/" target="_blank" style="margin-left: 5px;">A&R Belley inc.</a></h3>
+          </div>
+          <p style="font-size:14px; color: darkgrey; margin: 0;" data-translate="we2Time">Session hiver 2024, emploi à temps partiel</p>
+          <p data-translate="we2Description">Implementation d'une page de génération de contrats et d'envoi de documents.<br> Utilisation de Blazor, C#, SQL server, Docusign API.</p>
         </li>
         <li>
-          <h3 style="margin-bottom: 1px;">Développeur full-stack chez <a href="https://belley.net/fr/" target="_blank">A&R Belley inc.</a></h3>
-          <p style="font-size:14px; color: darkgrey; margin: 0;">Session automne 2023, stage T3</p>
-          <p>Développement d'une page permettant de faire des tests sur les marges projetées de l'entreprise.<br> Utilisation de C#, HTML, CSS, Telerik, JavaScript et SQL server.</p>
+          <div style="display: flex;">
+            <h3 style="margin-bottom: 1px;" data-translate="we3Title">Développeur full-stack chez </h3>
+            <h3><a href="https://belley.net/fr/" target="_blank" style="margin-left: 5px;">A&R Belley inc.</a></h3>
+          </div>
+          <p style="font-size:14px; color: darkgrey; margin: 0;" data-translate="we3Time">Session automne 2023, stage T3</p>
+          <p data-translate="we3Description">Développement d'une page permettant de faire des tests sur les marges projetées de l'entreprise.<br> Utilisation de C#, HTML, CSS, Telerik, JavaScript et SQL server.</p>
         </li>
         <li>
-          <h3 style="margin-bottom: 1px;">Programmeur Online pour <a href="https://sherbrooke.ubisoft.com/fr/" target="_blank">Ubisoft Sherbrooke</a></h3>
-          <p style="font-size:14px; color: darkgrey; margin: 0;">Session hiver 2023, stage T2</p>
-          <p>Implementation de nouvelles fonctionnalités pour un micro-service.<br> Utilisation de C#, GitLab et exploration d'Amazon Web Services.</p>
+          <div style="display: flex;">
+            <h3 style="margin-bottom: 1px;" data-translate="we4Title">Programmeur Online pour </h3>
+            <h3><a href="https://sherbrooke.ubisoft.com/fr/" target="_blank" style="margin-left: 5px;">Ubisoft Sherbrooke</a></h3>
+          </div>
+          <p style="font-size:14px; color: darkgrey; margin: 0;" data-translate="we4Time">Session hiver 2023, stage T2</p>
+          <p data-translate="we4Description">Implementation de nouvelles fonctionnalités pour un micro-service.<br> Utilisation de C#, GitLab et exploration d'Amazon Web Services.</p>
         </li>
         <li>
-          <h3 style="margin-bottom: 1px;">Analyste Programmeur à l'<a href="https://www.usherbrooke.ca/bottin/services/service-des-technologies-de-information#acc-1946-5946" target="_blank">Université de Sherbrooke</a></h3>
-          <p style="font-size:14px; color: darkgrey; margin: 0;">Sessions été et automne 2022, stage T1 et emploi à temps partiel</p>
-          <p>Migration en Java d'une application en PHP pour la gestion des étudiants à l'université. <br> Utilisation de Java, Spring Boot, HTML, CSS, GitLab et Docker.</p>
+          <div style="display: flex;">
+            <h3 style="margin-bottom: 1px;" data-translate="we5Title">Analyste Programmeur à l'</h3>
+            <h3><a href="https://www.usherbrooke.ca/bottin/services/service-des-technologies-de-information#acc-1946-5946" target="_blank">Université de Sherbrooke</a></h3>
+          </div>
+          <p style="font-size:14px; color: darkgrey; margin: 0;" data-translate="we5Time">Sessions été et automne 2022, stage T1 et emploi à temps partiel</p>
+          <p data-translate="we5Description">Migration en Java d'une application en PHP pour la gestion des étudiants à l'université. <br> Utilisation de Java, Spring Boot, HTML, CSS, GitLab et Docker.</p>
         </li>
       </ul>
     </section>
 
     <!-- Education Section -->
     <section id="education">
-      <h2>Éducation</h2>
+      <h2 data-translate="educationTitle">Éducation</h2>
       <ul>
         <li>
-          <h3>Baccalauréat en informatique régime coopératif</h3>
-          <p>Université de Sherbrooke (2021 - 2024)</p>
+          <h3 data-translate="education1Title">Baccalauréat en informatique régime coopératif</h3>
+          <p data-translate="education1Place">Université de Sherbrooke (2021 - 2024)</p>
         </li>
         <li>
-          <h3>Diplôme d'études collégiales mention sciences de la nature</h3>
-          <p>Collégial internationnal Sainte-Anne (2019 - 2021)</p>
+          <h3 data-translate="education2Title">Diplôme d'études collégiales mention sciences de la nature</h3>
+          <p data-translate="education2Place">Collégial internationnal Sainte-Anne (2019 - 2021)</p>
         </li>
       </ul>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projets</h2>
+      <h2 data-translate="projectsTitle">Projets</h2>
       <ul>
         <li>
-          <h3>Développement d'un jeu vidéo - ZooBots (Automne 2024)</h3>
-          <p>Implémentation en quatre mois d'un jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.</p>
-          <a href="https://leandeurrr.itch.io/zoobots">Voir le projet</a>
+          <h3 data-translate="project1Title">Développement d'un jeu vidéo - ZooBots (Automne 2024)</h3>
+          <p data-translate="project1Description">Implémentation en quatre mois d'un jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.</p>
+          <a href="https://leandeurrr.itch.io/zoobots" target="_blank" data-translate="project1View">Voir le projet</a>
         </li>
         <li>
-          <h3>Développement d'un jeu vidéo - Oneira (Hiver 2024)</h3>
-          <p>Dans le cadre du <a href="https://montreal.ubisoft.com/fr/nos-engagements/education/concours-universitaire/">Concours Universitaire Ubisoft</a>, implementation en trois mois d'un prototype de jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.</p>
-          <a href="https://youtu.be/Vb6nMk8uIOE">Voir la vidéo de présentation</a>
+          <h3 data-translate="project2Title">Développement d'un jeu vidéo - Oneira (Hiver 2024)</h3>
+          <p data-translate="project2Description">Dans le cadre du Concours Universitaire Ubisoft, implementation en trois mois d'un prototype de jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.</p>
+          <a href="https://youtu.be/Vb6nMk8uIOE" target="_blank" data-translate="project2View">Voir la vidéo de présentation</a>
         </li>
       </ul>
     </section>
   </main>
 
-  <a href="CV.pdf" class="download-button" target="_blank">
+  <a href="CV.pdf" class="download-button" target="_blank" data-translate="downloadCV">
     Télécharger le CV
   </a>
 
   <footer>
-    <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    <p data-translate="footer">&copy; 2024 Léandre Postal. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
