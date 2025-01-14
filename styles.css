@@ -13,7 +13,6 @@ header {
   color: #FFFFFF; /* Texte inversé */
   text-align: center;
   padding: 1rem 0;
-  display: flex;
   align-items: center;
   justify-content: centerlanguage;
   width: 100%;
@@ -95,10 +94,12 @@ h2 {
 /* Footer */
 footer {
   text-align: center;
+  align-content: center;
   padding: 1rem;
   background: #2C3E50; /* Bleu foncé */
   color: #FFFFFF; /* Texte inversé */
-  margin-top: 2rem;
+  margin-top: 2rem; 
+  flex-wrap: wrap;
 }
 
 a {
@@ -227,4 +228,22 @@ select#language-switcher {
 
 select#language-switcher:focus {
   outline: none;
+}
+
+footer a.linkedin-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-content: center;
+}
+
+footer a.linkedin-button:hover {
+  background-color: #005582; /* Couleur légèrement plus foncée au survol */
+}
+
+footer a.linkedin-button i {
+  margin-right: 0.5rem; /* Espacement entre l'icône et le texte */
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
