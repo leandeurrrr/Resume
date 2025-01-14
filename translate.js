@@ -100,9 +100,7 @@ const translations = {
       project1Description: "Implémentation en quatre mois d'un jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.",
       project1View: "Voir le projet",
       project2Title: "Développement d'un jeu vidéo - Oneira (Hiver 2024)",
-      project2Description: "Dans le cadre du",
-      project2Name: "Concours Universitaire Ubisoft",
-      project2Description2: ", implementation en trois mois d'un prototype de jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.",
+      project2Description: "Dans le cadre du Concours Universitaire Ubisoft, implementation en trois mois d'un prototype de jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.",
       project2View: "Voir la vidéo de présentation"
     }
   };

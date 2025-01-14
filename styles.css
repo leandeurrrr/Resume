@@ -47,6 +47,20 @@ h2 {
 /* Interests Grid */
 .grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column; /* Aligne les cartes verticalement */
+    align-items: center; /* Centre les cartes */
+  }
+}
+
+.gridPresentation {
+  display: flex;
   justify-content: center; 
   align-items: center;
 }
