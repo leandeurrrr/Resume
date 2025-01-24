@@ -21,7 +21,7 @@ header {
 
 h1 {
   margin: 0;
-  color: #2980B9; /* Bleu acier */
+  color: #3298db; /* Bleu acier */
 }
 
 main {
@@ -33,14 +33,14 @@ main {
 section {
   margin: 2rem 0;
   padding: 1rem;
-  background: #ECECEC; /* Gris clair */
+  background: #ffffff; /* Gris clair */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   margin-top: 0;
-  color: #2980B9; /* Bleu acier */
+  color: #3298db; /* Bleu acier */
 }
 
 /* Interests Grid */
@@ -87,7 +87,7 @@ h2 {
 
 .progress-bar div {
   height: 100%;
-  background: #2980B9; /* Bleu acier */
+  background: #3298db; /* Bleu acier */
   border-radius: 5px;
 }
 
@@ -155,7 +155,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #2980B9; /* Bleu acier */
+  background-color: #3298db; /* Bleu acier */
   color: #FFFFFF; /* Texte blanc */
   /*padding: 1rem;*/
 }
@@ -182,7 +182,7 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2980B9; /* Bleu acier */
+  background-color: #3298db; /* Bleu acier */
   color: #FFFFFF; /* Texte blanc */
   text-decoration: none;
   padding: 10px 20px;
@@ -203,7 +203,7 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: -1; 
-  background-color: #ECECEC; 
+  background-color: #f8f8f8; 
 }
 
 .aboutMe {
@@ -246,4 +246,9 @@ footer a.linkedin-button i {
   margin-right: 0.5rem; /* Espacement entre l'icône et le texte */
   font-size: 1.2rem;
   vertical-align: middle;
+}
+
+.note{
+  font-size:14px; 
+  color: darkgrey; margin: 0;
 }

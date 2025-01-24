@@ -49,7 +49,11 @@ const translations = {
       project1View: "See the project",
       project2Title: "Development of a video game - Oneira (Winter 2024)",
       project2Description: "As part of the Ubisoft University Competition, implementation in three months of a video game prototype. Using Unity, C#, Gitlab and Blender.",
-      project2View: "Watch the presentation video"
+      project2View: "Watch the presentation video",
+      project3Title: "Personal Challenges - Winter 2025", 
+      project3Description: "In order to always progress in development, I challenge myself. Here the implementation of a tic tac toe game in Java. Using Java and Swing.",
+      project3Note: "Note: This is just the beginning, other projects will be added in the future.",
+      project3View: "GitHub Project"
     },
     fr: {
       title: "Léandre Postal",
@@ -101,7 +105,11 @@ const translations = {
       project1View: "Voir le projet",
       project2Title: "Développement d'un jeu vidéo - Oneira (Hiver 2024)",
       project2Description: "Dans le cadre du Concours Universitaire Ubisoft, implementation en trois mois d'un prototype de jeu vidéo. Utilisation de Unity, C#, Gitlab et Blender.",
-      project2View: "Voir la vidéo de présentation"
+      project2View: "Voir la vidéo de présentation",
+      project3Title: "Défis personnels - Hiver 2025", 
+      project3Description: "Afin de toujours progresser en développement, je me lance des défis. Ici l'implementation d'un jeu de tic tac toe en Java. Utilisation de Java et Swing.",
+      project3Note: "Note : Ce n'est que le début, d'autres projets seront ajoutés dans le futur.",
+      project3View: "Projet GitHub"
     }
   };
 
