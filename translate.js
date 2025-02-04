@@ -62,8 +62,10 @@ const translations = {
       projectIncoming: "Link to the upcoming github project.",
       project5Title: "EventAPI - Winter 2025",
       project5Description: "EventAPI is an API dedicated to event management. Developed in Java, it relies on a SQL database to ensure reliable and efficient management of event-related data.",
-      project5Note: "In development",
-      project5View: "Github project"
+      project6Title: "Discord Bot - Winter 2025",
+      project6Description: "This Discord bot in C# is an interactive and versatile companion designed to enrich the user experience on a Discord server. Its purpose is to display information using public APIs and to optimize certain processes available on the server.",
+      project7Title: "ChestGameApi - Winter 2025",
+      project7Description: "The Chest Game API is a REST API in Node.js with a MongoDB database. It allows you to manage an exploration-type game where players move on an 11x11 grid to discover squares, avoid traps and find a chest. This API is notably used by the previously developed Discord Bot."
     },
     fr: {
       title: "Léandre Postal",
@@ -128,8 +130,11 @@ const translations = {
       projectIncoming: "Lien vers le projet github à venir.",
       project5Title: "EventAPI - Hiver 2025",
       project5Description: "EventAPI est une API dédiée à la gestion des événements. Développée en Java, elle s'appuie sur une base de données SQL pour assurer une gestion fiable et efficace des données liées aux événements.",
-      project5Note: "En cours de développement",
-      project5View: "Projet Github"
+      project6Title: "Discord Bot - Hiver 2025",
+      project6Description: "Ce bot Discord en C# est un compagnon interactif et polyvalent conçu pour enrichir l'expérience des utilisateurs sur un serveur Discord. Il a pour but d'afficher des information grâce à des api publics et d'optimiser certains processus disponibles sur le serveur.",
+      project7Title: "ChestGameApi - Hiver 2025",
+      project7Description: "L’API Chest Game est une API REST en Node.js avec une base de données MongoDB. Elle permet de gérer un jeu de type exploration où les joueurs se déplacent sur une grille de 11x11 pour découvrir des cases, éviter des pièges et trouver un coffre. Cet api est notamment utilisé par le Bot discord précédemment développé."
+    
     }
   };
 
